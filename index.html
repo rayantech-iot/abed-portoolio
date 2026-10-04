@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Constantin GADEGBE — AI & Data Engineer</title>
+  <meta name="description" content="Portfolio de Constantin GADEGBE — Data Science, Artificial Intelligence, Machine Learning, Computer Vision et Data Engineering.">
+  <meta name="author" content="Constantin GADEGBE">
+  <meta name="theme-color" content="#F7F8FA">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Constantin GADEGBE — AI & Data Engineer">
+  <meta property="og:description" content="Portfolio de Constantin GADEGBE — Data Science, Artificial Intelligence, Machine Learning, Computer Vision et Data Engineering.">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Constantin GADEGBE — AI & Data Engineer">
+  <meta name="twitter:description" content="Portfolio de Constantin GADEGBE — Data Science, Artificial Intelligence, Machine Learning, Computer Vision et Data Engineering.">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link" data-i18n="skip">Aller au contenu</a>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="#hero" class="navbar__brand" aria-label="Constantin GADEGBE — Accueil">
+        <span class="navbar__logo">CG</span>
+        <span class="navbar__name">CONSTANTIN GADEGBE</span>
+      </a>
+
+      <nav class="navbar__nav" id="primary-nav" aria-label="Navigation principale">
+        <a href="#about" class="navbar__link" data-i18n="nav.about">ABOUT</a>
+        <a href="#experience" class="navbar__link" data-i18n="nav.experience">EXPERIENCE</a>
+        <a href="#projects" class="navbar__link" data-i18n="nav.projects">PROJECTS</a>
+        <a href="#expertise" class="navbar__link" data-i18n="nav.expertise">EXPERTISE</a>
+        <a href="#contact" class="navbar__link" data-i18n="nav.contact">CONTACT</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" class="lang-btn is-active" data-lang="fr" aria-pressed="true">FR</button>
+          <span class="lang-divider" aria-hidden="true">/</span>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Basculer le thème" title="Theme">
+          <span class="theme-icon theme-icon--sun" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </span>
+          <span class="theme-icon theme-icon--moon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </span>
+        </button>
+
+        <a href="#contact" class="btn btn--nav" data-i18n="nav.cta">CONTACT</a>
+
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <nav class="mobile-menu__nav" aria-label="Navigation mobile">
+        <a href="#about" class="mobile-menu__link" data-i18n="nav.about">ABOUT</a>
+        <a href="#experience" class="mobile-menu__link" data-i18n="nav.experience">EXPERIENCE</a>
+        <a href="#projects" class="mobile-menu__link" data-i18n="nav.projects">PROJECTS</a>
+        <a href="#expertise" class="mobile-menu__link" data-i18n="nav.expertise">EXPERTISE</a>
+        <a href="#contact" class="mobile-menu__link" data-i18n="nav.contact">CONTACT</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="hero" aria-label="Introduction">
+      <div class="hero__glow" id="hero-glow" aria-hidden="true"></div>
+      <div class="hero__grid" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow reveal" data-i18n="hero.eyebrow">AI & DATA ENGINEER</p>
+        <h1 class="hero__title reveal">
+          <span class="hero__line" data-i18n="hero.line1">DATA.</span>
+          <span class="hero__line" data-i18n="hero.line2">INTELLIGENCE.</span>
+          <span class="hero__line" data-i18n="hero.line3">ENGINEERING.</span>
+        </h1>
+        <p class="hero__subtitle reveal" data-i18n="hero.subtitle">
+          Je conçois des solutions intelligentes à l'intersection de la Data, de l'IA et du Software Engineering.
+        </p>
+        <ul class="hero__tags reveal" aria-label="Domaines">
+          <li>Computer Vision</li>
+          <li>Machine Learning</li>
+          <li>Data Engineering</li>
+          <li>Generative AI</li>
+        </ul>
+        <div class="hero__cta reveal">
+          <a href="#projects" class="btn btn--primary">
+            <span data-i18n="hero.cta1">EXPLORE PROJECTS</span>
+            <svg class="btn__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5"/></svg>
+          </a>
+          <a href="#contact" class="btn btn--ghost">
+            <span data-i18n="hero.cta2">CONTACT ME</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__visual reveal" aria-hidden="true">
+        <svg class="flow-svg" viewBox="0 0 320 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="flowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="var(--accent)" stop-opacity="0.15"/>
+              <stop offset="100%" stop-color="var(--accent)" stop-opacity="0.6"/>
+            </linearGradient>
+            <filter id="softGlow">
+              <feGaussianBlur stdDeviation="2" result="blur"/>
+              <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+
+          <!-- Vertical spine -->
+          <line class="flow-line" x1="160" y1="48" x2="160" y2="372" stroke="url(#flowGrad)" stroke-width="1.5"/>
+
+          <!-- Nodes -->
+          <g class="flow-node" data-node="0">
+            <circle cx="160" cy="48" r="28" class="flow-node__ring"/>
+            <circle cx="160" cy="48" r="6" class="flow-node__dot"/>
+            <text x="160" y="90" class="flow-node__label">DATA</text>
+          </g>
+          <g class="flow-node" data-node="1">
+            <circle cx="160" cy="156" r="28" class="flow-node__ring"/>
+            <circle cx="160" cy="156" r="6" class="flow-node__dot"/>
+            <text x="160" y="198" class="flow-node__label">MODEL</text>
+          </g>
+          <g class="flow-node" data-node="2">
+            <circle cx="160" cy="264" r="28" class="flow-node__ring"/>
+            <circle cx="160" cy="264" r="6" class="flow-node__dot"/>
+            <text x="160" y="306" class="flow-node__label">INTELLIGENCE</text>
+          </g>
+          <g class="flow-node" data-node="3">
+            <circle cx="160" cy="372" r="28" class="flow-node__ring"/>
+            <circle cx="160" cy="372" r="6" class="flow-node__dot"/>
+            <text x="160" y="414" class="flow-node__label">IMPACT</text>
+          </g>
+
+          <!-- Side nodes -->
+          <g class="flow-side">
+            <line x1="160" y1="156" x2="60" y2="120" class="flow-side__line"/>
+            <circle cx="60" cy="120" r="4" class="flow-side__dot"/>
+            <line x1="160" y1="156" x2="260" y2="120" class="flow-side__line"/>
+            <circle cx="260" cy="120" r="4" class="flow-side__dot"/>
+            <line x1="160" y1="264" x2="50" y2="300" class="flow-side__line"/>
+            <circle cx="50" cy="300" r="4" class="flow-side__dot"/>
+            <line x1="160" y1="264" x2="270" y2="300" class="flow-side__line"/>
+            <circle cx="270" cy="300" r="4" class="flow-side__dot"/>
+          </g>
+
+          <!-- Traveling particles -->
+          <circle class="flow-particle" r="2.5" cx="160" cy="48">
+            <animateMotion dur="4s" repeatCount="indefinite" path="M0,0 L0,108 L0,108 L0,108 L0,108"/>
+          </circle>
+          <circle class="flow-particle flow-particle--delay" r="2" cx="160" cy="48">
+            <animateMotion dur="5.5s" begin="1.2s" repeatCount="indefinite" path="M0,0 L0,324"/>
+          </circle>
+        </svg>
+      </div>
+
+      <div class="scroll-indicator reveal">
+        <span data-i18n="hero.scroll">SCROLL TO EXPLORE</span>
+        <div class="scroll-indicator__line" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="container">
+        <p class="section__label reveal" data-i18n="about.label">01 / ABOUT</p>
+        <div class="about__grid">
+          <div class="about__editorial">
+            <h2 class="about__headline reveal">
+              <span data-i18n="about.headline1">From software engineering</span><br>
+              <span data-i18n="about.headline2">to intelligent systems.</span>
+            </h2>
+            <div class="about__text reveal">
+              <p data-i18n="about.p1">Constantin GADEGBE est un profil issu du génie logiciel et des systèmes d'information qui s'est progressivement spécialisé dans la vision industrielle, la Data Science, le Machine Learning, la Data Engineering et l'IA générative.</p>
+              <p data-i18n="about.p2">Son parcours combine développement logiciel, traitement de données, Computer Vision, BI et systèmes intelligents.</p>
+            </div>
+          </div>
+          <aside class="about__meta reveal" aria-label="Profil">
+            <div class="about__meta-item">
+              <span class="about__meta-label" data-i18n="about.meta1">AI & DATA</span>
+            </div>
+            <div class="about__meta-item">
+              <span class="about__meta-label">COMPUTER VISION</span>
+            </div>
+            <div class="about__meta-item">
+              <span class="about__meta-label">SOFTWARE ENGINEERING</span>
+            </div>
+            <div class="about__meta-item">
+              <span class="about__meta-label">FRANCE</span>
+            </div>
+            <div class="about__meta-item">
+              <span class="about__meta-label" data-i18n="about.meta5">OPEN TO MOBILITY</span>
+            </div>
+            <div class="about__meta-item about__meta-item--accent">
+              <span class="about__meta-label" data-i18n="about.search">Alternance 24 mois — Sept. 2026</span>
+              <span class="about__meta-sub" data-i18n="about.rhythm">1 sem. formation / 3 sem. entreprise</span>
+            </div>
+          </aside>
+        </div>
+
+        <!-- Education Timeline -->
+        <div class="education reveal" id="education">
+          <h3 class="education__title" data-i18n="education.title">Parcours</h3>
+          <div class="timeline" id="edu-timeline">
+            <div class="timeline__track" aria-hidden="true">
+              <div class="timeline__progress" id="timeline-progress"></div>
+            </div>
+            <ol class="timeline__list">
+              <li class="timeline__item">
+                <span class="timeline__dot"></span>
+                <span class="timeline__years">2022 — 2025</span>
+                <strong class="timeline__degree" data-i18n="edu.1.degree">Génie Logiciels & Systèmes d'Informations</strong>
+                <span class="timeline__school">IAI-Togo</span>
+              </li>
+              <li class="timeline__item">
+                <span class="timeline__dot"></span>
+                <span class="timeline__years">2025 — 2026</span>
+                <strong class="timeline__degree" data-i18n="edu.2.degree">Vision pour la Robotique Industrielle</strong>
+                <span class="timeline__school">Université de Nîmes</span>
+              </li>
+              <li class="timeline__item">
+                <span class="timeline__dot"></span>
+                <span class="timeline__years">2026 — 2028</span>
+                <strong class="timeline__degree" data-i18n="edu.3.degree">Master IA & Data</strong>
+                <span class="timeline__school">Isp-Cnam</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section experience" id="experience">
+      <div class="container">
+        <p class="section__label reveal" data-i18n="exp.label">02 / EXPERIENCE</p>
+        <h2 class="section__title reveal" data-i18n="exp.title">Expérience professionnelle</h2>
+
+        <div class="exp-list">
+          <!-- Vert Marine -->
+          <article class="exp-card reveal">
+            <div class="exp-card__header">
+              <div>
+                <p class="exp-card__company">VERT MARINE</p>
+                <h3 class="exp-card__role" data-i18n="exp.1.role">Stagiaire en vision par ordinateur</h3>
+                <p class="exp-card__date">05/2026 — 07/2026</p>
+              </div>
+              <div class="exp-card__stat" data-count="94">
+                <span class="exp-card__number">94%</span>
+                <span class="exp-card__stat-label" data-i18n="exp.1.stat">PRECISION</span>
+              </div>
+            </div>
+            <span class="exp-card__badge">Computer Vision</span>
+            <ul class="exp-card__points">
+              <li data-i18n="exp.1.p1">Conception d'un système low-cost de surveillance de bassins de natation.</li>
+              <li data-i18n="exp.1.p2">Traitement et analyse de séquences vidéo pour détecter des situations de noyade potentielles.</li>
+              <li data-i18n="exp.1.p3">Étude et intégration de YOLO11.</li>
+            </ul>
+          </article>
+
+          <!-- Dev Web -->
+          <article class="exp-card reveal">
+            <div class="exp-card__header">
+              <div>
+                <p class="exp-card__company" data-i18n="exp.2.company">DÉVELOPPEMENT WEB</p>
+                <h3 class="exp-card__role" data-i18n="exp.2.role">Plateforme de promotion d'une école de langues internationale</h3>
+                <p class="exp-card__date">05/2025 — 08/2025</p>
+              </div>
+            </div>
+            <div class="tags">
+              <span class="tag">Angular</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">Docker</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">Stripe</span>
+            </div>
+          </article>
+
+          <!-- SUNU Bank -->
+          <article class="exp-card reveal">
+            <div class="exp-card__header">
+              <div>
+                <p class="exp-card__company">SUNU BANK TOGO</p>
+                <h3 class="exp-card__role" data-i18n="exp.3.role">Administration systèmes et réseaux</h3>
+                <p class="exp-card__date">07/2024 — 11/2024</p>
+              </div>
+              <div class="exp-card__stat" data-count="200">
+                <span class="exp-card__number">200+</span>
+                <span class="exp-card__stat-label" data-i18n="exp.3.stat">POSTES MIGRÉS</span>
+              </div>
+            </div>
+            <div class="tags">
+              <span class="tag">Windows Server</span>
+              <span class="tag">Active Directory</span>
+              <span class="tag">OCS Inventory</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <p class="section__label reveal" data-i18n="proj.label">03 / SELECTED PROJECTS</p>
+        <h2 class="section__title reveal" data-i18n="proj.title">Projets sélectionnés</h2>
+
+        <!-- Project 01 -->
+        <article class="project reveal" id="project-01">
+          <div class="project__meta">
+            <span class="project__num">01</span>
+            <span class="project__badge">GENERATIVE AI / DATA</span>
+          </div>
+          <h3 class="project__title" data-i18n="proj.1.title">Plateforme analytique Retail augmentée par l'IA</h3>
+          <div class="project__body">
+            <div class="project__info">
+              <p class="project__desc" data-i18n="proj.1.desc">Extension Agentic AI pour une plateforme Power BI retail intégrée à Microsoft Fabric.</p>
+              <div class="tags">
+                <span class="tag">Microsoft Fabric</span>
+                <span class="tag">Azure OpenAI</span>
+                <span class="tag">Azure AI Search</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">RAG</span>
+              </div>
+              <ul class="project__points">
+                <li data-i18n="proj.1.t1">Architecture Medallion</li>
+                <li data-i18n="proj.1.t2">Agent IA</li>
+                <li>RAG</li>
+                <li data-i18n="proj.1.t4">Sources métier</li>
+                <li data-i18n="proj.1.t5">Anti-hallucination</li>
+                <li>Logs</li>
+                <li data-i18n="proj.1.t7">Evaluation</li>
+              </ul>
+            </div>
+            <div class="project__visual project__visual--agent" aria-hidden="true">
+              <div class="agent-flow">
+                <div class="agent-flow__node">USER</div>
+                <div class="agent-flow__arrow"></div>
+                <div class="agent-flow__node agent-flow__node--accent">AI AGENT</div>
+                <div class="agent-flow__arrow"></div>
+                <div class="agent-flow__node">AZURE OPENAI</div>
+                <div class="agent-flow__split">
+                  <div class="agent-flow__branch">
+                    <div class="agent-flow__arrow agent-flow__arrow--diag"></div>
+                    <div class="agent-flow__node">FABRIC</div>
+                  </div>
+                  <div class="agent-flow__branch">
+                    <div class="agent-flow__arrow agent-flow__arrow--diag"></div>
+                    <div class="agent-flow__node">AI SEARCH</div>
+                  </div>
+                </div>
+                <div class="agent-flow__arrow"></div>
+                <div class="agent-flow__node agent-flow__node--result">GROUNDED INSIGHT</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 02 -->
+        <article class="project reveal" id="project-02">
+          <div class="project__meta">
+            <span class="project__num">02</span>
+            <span class="project__badge">COMPUTER VISION</span>
+          </div>
+          <h3 class="project__title" data-i18n="proj.2.title">Computer Vision — Pool Safety</h3>
+          <div class="project__body">
+            <div class="project__info">
+              <p class="project__desc" data-i18n="proj.2.desc">Système de détection de situations à risque en bassin, fondé sur YOLO11 et le traitement vidéo.</p>
+              <div class="tags">
+                <span class="tag">YOLO11</span>
+                <span class="tag">OpenCV</span>
+                <span class="tag">Video Processing</span>
+              </div>
+            </div>
+            <div class="project__visual project__visual--cv" aria-hidden="true">
+              <div class="cv-demo">
+                <div class="cv-demo__pool">
+                  <div class="cv-demo__water"></div>
+                  <div class="cv-demo__bbox">
+                    <span class="cv-demo__label">PERSON · 93%</span>
+                  </div>
+                  <div class="cv-demo__alert">RISK DETECTED</div>
+                </div>
+                <p class="cv-demo__note" data-i18n="proj.2.note">Illustrative visualization</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 03 -->
+        <article class="project reveal" id="project-03">
+          <div class="project__meta">
+            <span class="project__num">03</span>
+            <span class="project__badge">BUSINESS INTELLIGENCE</span>
+          </div>
+          <h3 class="project__title" data-i18n="proj.3.title">Retail Analytics Platform</h3>
+          <div class="project__body">
+            <div class="project__info">
+              <p class="project__desc" data-i18n="proj.3.desc">Plateforme analytique retail — du modèle sémantique aux insights décisionnels.</p>
+              <div class="tags">
+                <span class="tag">Power BI</span>
+                <span class="tag">DAX</span>
+                <span class="tag">SQL</span>
+                <span class="tag">PBIP</span>
+                <span class="tag">Git</span>
+                <span class="tag">RLS</span>
+              </div>
+              <div class="bi-pipeline" aria-hidden="true">
+                <span>DATA</span>
+                <span class="bi-pipeline__sep">→</span>
+                <span>SEMANTIC MODEL</span>
+                <span class="bi-pipeline__sep">→</span>
+                <span>DAX</span>
+                <span class="bi-pipeline__sep">→</span>
+                <span>POWER BI</span>
+                <span class="bi-pipeline__sep">→</span>
+                <span>INSIGHTS</span>
+              </div>
+            </div>
+            <div class="project__visual project__visual--bi" aria-hidden="true">
+              <div class="fake-dash">
+                <div class="fake-dash__kpi">
+                  <span class="fake-dash__label">Revenue</span>
+                  <span class="fake-dash__value">€2.4M</span>
+                  <svg class="fake-dash__chart" viewBox="0 0 100 32" preserveAspectRatio="none">
+                    <polyline points="0,28 15,22 30,24 45,14 60,18 75,8 100,4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                  </svg>
+                </div>
+                <div class="fake-dash__kpi">
+                  <span class="fake-dash__label">Stock</span>
+                  <span class="fake-dash__value">18.2K</span>
+                  <div class="fake-dash__bars">
+                    <span style="--h:40%"></span><span style="--h:70%"></span><span style="--h:55%"></span><span style="--h:85%"></span><span style="--h:60%"></span>
+                  </div>
+                </div>
+                <div class="fake-dash__kpi">
+                  <span class="fake-dash__label">Customers</span>
+                  <span class="fake-dash__value">12.8K</span>
+                  <svg class="fake-dash__chart" viewBox="0 0 100 32" preserveAspectRatio="none">
+                    <polyline points="0,20 20,18 40,22 60,12 80,10 100,6" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                  </svg>
+                </div>
+                <div class="fake-dash__kpi">
+                  <span class="fake-dash__label">Stores</span>
+                  <span class="fake-dash__value">142</span>
+                  <div class="fake-dash__bars">
+                    <span style="--h:50%"></span><span style="--h:65%"></span><span style="--h:45%"></span><span style="--h:90%"></span><span style="--h:75%"></span>
+                  </div>
+                </div>
+              </div>
+              <p class="cv-demo__note" data-i18n="proj.3.note">Illustrative visualization</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 04 -->
+        <article class="project reveal" id="project-04">
+          <div class="project__meta">
+            <span class="project__num">04</span>
+            <span class="project__badge">DATA ENGINEERING</span>
+          </div>
+          <h3 class="project__title" data-i18n="proj.4.title">Data Engineering — 56K Tourist Places</h3>
+          <div class="project__body">
+            <div class="project__info">
+              <p class="project__desc" data-i18n="proj.4.desc">Pipeline de données pour l'ingestion, le nettoyage et l'analyse de 56 000 lieux touristiques.</p>
+              <div class="tags">
+                <span class="tag">Pandas</span>
+                <span class="tag">NumPy</span>
+                <span class="tag">Scikit-learn</span>
+              </div>
+              <div class="project__big-stat">
+                <span class="project__big-number">56K</span>
+                <span class="project__big-label" data-i18n="proj.4.stat">DATA POINTS</span>
+              </div>
+            </div>
+            <div class="project__visual project__visual--de" aria-hidden="true">
+              <div class="de-pipeline">
+                <div class="de-pipeline__step">JSONL</div>
+                <div class="de-pipeline__conn"></div>
+                <div class="de-pipeline__step">INGESTION</div>
+                <div class="de-pipeline__conn"></div>
+                <div class="de-pipeline__step">CLEANING</div>
+                <div class="de-pipeline__conn"></div>
+                <div class="de-pipeline__step">TRANSFORM</div>
+                <div class="de-pipeline__conn"></div>
+                <div class="de-pipeline__step">FEATURE ENG.</div>
+                <div class="de-pipeline__conn"></div>
+                <div class="de-pipeline__step de-pipeline__step--end">ANALYTICS</div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERTISE -->
+    <section class="section expertise" id="expertise">
+      <div class="container">
+        <p class="section__label reveal" data-i18n="expertise.label">04 / EXPERTISE</p>
+        <h2 class="section__title reveal" data-i18n="expertise.title">Domaines d'expertise</h2>
+
+        <div class="expertise-grid">
+          <article class="expertise-card reveal">
+            <span class="expertise-card__num">01</span>
+            <div class="expertise-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            </div>
+            <h3 class="expertise-card__title">COMPUTER VISION</h3>
+            <ul class="expertise-card__skills">
+              <li>OpenCV</li>
+              <li>YOLO11</li>
+              <li>Image Processing</li>
+              <li>Video Analysis</li>
+              <li>3D Reconstruction</li>
+            </ul>
+          </article>
+
+          <article class="expertise-card reveal">
+            <span class="expertise-card__num">02</span>
+            <div class="expertise-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 3 5-6"/></svg>
+            </div>
+            <h3 class="expertise-card__title">DATA SCIENCE</h3>
+            <ul class="expertise-card__skills">
+              <li>Python</li>
+              <li>Pandas</li>
+              <li>NumPy</li>
+              <li>Scikit-learn</li>
+            </ul>
+          </article>
+
+          <article class="expertise-card reveal">
+            <span class="expertise-card__num">03</span>
+            <div class="expertise-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6"/><path d="M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>
+            </div>
+            <h3 class="expertise-card__title">DATA ENGINEERING</h3>
+            <ul class="expertise-card__skills">
+              <li>SQL</li>
+              <li>Microsoft Fabric</li>
+              <li>Data Pipelines</li>
+              <li>Medallion Architecture</li>
+            </ul>
+          </article>
+
+          <article class="expertise-card reveal">
+            <span class="expertise-card__num">04</span>
+            <div class="expertise-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3 class="expertise-card__title">GENERATIVE AI</h3>
+            <ul class="expertise-card__skills">
+              <li>Azure OpenAI</li>
+              <li>RAG</li>
+              <li>AI Search</li>
+              <li>FastAPI</li>
+              <li>Agents</li>
+            </ul>
+          </article>
+
+          <article class="expertise-card reveal">
+            <span class="expertise-card__num">05</span>
+            <div class="expertise-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+            </div>
+            <h3 class="expertise-card__title">BUSINESS INTELLIGENCE</h3>
+            <ul class="expertise-card__skills">
+              <li>Power BI</li>
+              <li>DAX</li>
+              <li>Semantic Models</li>
+              <li>RLS</li>
+              <li>PBIP</li>
+            </ul>
+          </article>
+
+          <article class="expertise-card reveal">
+            <span class="expertise-card__num">06</span>
+            <div class="expertise-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3 class="expertise-card__title">SOFTWARE ENGINEERING</h3>
+            <ul class="expertise-card__skills">
+              <li>Angular</li>
+              <li>TypeScript</li>
+              <li>Spring Boot</li>
+              <li>REST</li>
+              <li>Docker</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH STACK -->
+    <section class="section tools" id="tools">
+      <div class="container">
+        <h2 class="tools__title reveal" data-i18n="tools.title">Tools I work with</h2>
+        <div class="tools__tags reveal">
+          <span class="tag tag--lg">Python</span>
+          <span class="tag tag--lg">PyTorch</span>
+          <span class="tag tag--lg">OpenCV</span>
+          <span class="tag tag--lg">YOLO11</span>
+          <span class="tag tag--lg">Pandas</span>
+          <span class="tag tag--lg">NumPy</span>
+          <span class="tag tag--lg">Scikit-learn</span>
+          <span class="tag tag--lg">SQL</span>
+          <span class="tag tag--lg">Power BI</span>
+          <span class="tag tag--lg">Microsoft Fabric</span>
+          <span class="tag tag--lg">Azure OpenAI</span>
+          <span class="tag tag--lg">FastAPI</span>
+          <span class="tag tag--lg">Angular</span>
+          <span class="tag tag--lg">TypeScript</span>
+          <span class="tag tag--lg">Spring Boot</span>
+          <span class="tag tag--lg">Docker</span>
+          <span class="tag tag--lg">Git</span>
+          <span class="tag tag--lg">Java</span>
+          <span class="tag tag--lg">C#</span>
+          <span class="tag tag--lg">JavaScript</span>
+          <span class="tag tag--lg">PHP</span>
+          <span class="tag tag--lg">MongoDB</span>
+          <span class="tag tag--lg">PostgreSQL</span>
+          <span class="tag tag--lg">MySQL</span>
+          <span class="tag tag--lg">Neo4j</span>
+          <span class="tag tag--lg">Firebase</span>
+          <span class="tag tag--lg">Power Automate</span>
+          <span class="tag tag--lg">Make</span>
+          <span class="tag tag--lg">VBA</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHILOSOPHY -->
+    <section class="philosophy" id="philosophy" aria-label="Philosophy">
+      <div class="container">
+        <div class="philosophy__words reveal" aria-hidden="true">
+          <span class="philosophy__word" data-word="0">DATA</span>
+          <span class="philosophy__arrow">→</span>
+          <span class="philosophy__word" data-word="1">INTELLIGENCE</span>
+          <span class="philosophy__arrow">→</span>
+          <span class="philosophy__word" data-word="2">IMPACT</span>
+        </div>
+        <h2 class="philosophy__headline reveal">
+          <span data-i18n="phil.l1">DATA</span><br>
+          <span data-i18n="phil.l2">BECOMES</span><br>
+          <span data-i18n="phil.l3">INTELLIGENCE</span>
+        </h2>
+        <p class="philosophy__tagline reveal" data-i18n="phil.tagline">Build systems. Solve problems. Turn data into decisions.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <p class="section__label reveal" data-i18n="contact.label">05 / CONTACT</p>
+        <h2 class="contact__headline reveal" data-i18n="contact.headline">Construisons quelque chose d'intelligent.</h2>
+        <p class="contact__sub reveal" data-i18n="contact.sub">Une problématique Data, IA, Computer Vision ou Software Engineering ? Parlons-en.</p>
+
+        <div class="contact__details reveal">
+          <a href="mailto:gadegbeabednego@gmail.com" class="contact__link">gadegbeabednego@gmail.com</a>
+          <a href="tel:+33758330140" class="contact__link">0758330140</a>
+          <span class="contact__link contact__link--static" data-i18n="contact.linkedin">LinkedIn — Constantin GADEGBE</span>
+        </div>
+
+        <a href="mailto:gadegbeabednego@gmail.com" class="btn btn--primary btn--lg reveal">
+          <span data-i18n="contact.cta">START A CONVERSATION</span>
+          <svg class="btn__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5"/></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo">CG</span>
+        <div>
+          <p class="footer__name">CONSTANTIN GADEGBE</p>
+          <p class="footer__role">AI & DATA ENGINEER</p>
+        </div>
+      </div>
+      <div class="footer__fields">
+        <span>Data Science</span>
+        <span>Artificial Intelligence</span>
+        <span>Machine Learning</span>
+      </div>
+      <p class="footer__copy">&copy; <span id="year"></span> Constantin GADEGBE</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
